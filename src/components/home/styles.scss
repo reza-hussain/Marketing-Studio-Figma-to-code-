@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 100px;
+  gap: 300px;
 
   // JUMBOTRON
 
@@ -32,6 +32,7 @@
         font-weight: 700;
         max-width: 860px;
         line-height: 78px;
+        width: 100%;
       }
 
       p {
@@ -97,6 +98,8 @@
     }
   }
 
+  // SERVICES
+
   .services {
     &Cards {
       display: flex;
@@ -114,6 +117,8 @@
       }
     }
   }
+
+  // GET INSPIRED
 
   .getInspired {
     display: flex;
@@ -149,6 +154,7 @@
         font-size: 16px;
         line-height: 24px;
         max-width: 50%;
+        margin: 0 auto;
       }
     }
 
@@ -159,6 +165,8 @@
       width: 100%;
     }
   }
+
+  // TESTIMONIALS
 
   .testimonials {
     width: 100%;
@@ -222,6 +230,136 @@
         align-items: flex-start;
         flex-direction: column;
         gap: 10px;
+      }
+    }
+  }
+
+  // CLIENTS
+  .ourClients {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: #e23125;
+    max-width: 1400px;
+    gap: 50px;
+    h4 {
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 8px;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    .splide {
+      max-width: 100%;
+    }
+  }
+
+  // GET IN TOUCH
+
+  .getInTouch {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: #e23125;
+    gap: 35px;
+    text-align: center;
+
+    h4 {
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+    }
+    h3 {
+      font-size: 58px;
+      line-height: 60px;
+      font-family: "Lora", sans-serif;
+      letter-spacing: -2px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    button {
+      max-width: 300px;
+    }
+  }
+
+  // FOOTER
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    padding-bottom: 50px;
+
+    &ColumnContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    border-top: 2px solid #e23125;
+    color: #e23125;
+    &Column {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 60px 80px;
+      gap: 18px;
+
+      flex-basis: 25%;
+
+      &:nth-of-type(1) {
+        flex-basis: 25%;
+      }
+      &:nth-last-of-type(2),
+      &:nth-last-of-type(3) {
+        flex-basis: 25%;
+      }
+      &:nth-of-type(4) {
+        flex-basis: 35%;
+      }
+
+      &Desc {
+        padding-top: 25px;
+      }
+
+      &Newsletter {
+        font-size: 28px;
+      }
+
+      &Social {
+        max-width: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+      }
+
+      p,
+      li {
+        font-weight: 300;
+      }
+
+      input {
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid #e23125;
+        width: 100%;
+        padding: 10px;
+
+        &::placeholder {
+          color: #e23125;
+        }
       }
     }
   }
