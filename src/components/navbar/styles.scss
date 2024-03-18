@@ -1,0 +1,32 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9e0e2;
+  color: #e23125;
+  padding: 26px;
+
+  &List {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    list-style-type: none;
+
+    &Item {
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+
+  &Button {
+    padding: 22px 64px;
+    border-radius: 30px;
+    border: none;
+    background-color: #e23125;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
