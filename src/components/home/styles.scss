@@ -2,6 +2,11 @@
   width: 100%;
   background-color: #f9e0e2;
   padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 100px;
 
   // JUMBOTRON
 
@@ -43,12 +48,14 @@
 
   // ABOUT
 
-  .about {
+  .about,
+  .services {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 100px;
-    padding-top: 100px;
+    flex-direction: row;
+
     &Content {
       display: flex;
       justify-content: flex-start;
@@ -56,8 +63,10 @@
       flex-direction: column;
       color: #e23125;
       gap: 35px;
+      flex-basis: 50%;
+
       h4 {
-        font-size: 16px;
+        font-size: 12px;
         line-height: 16px;
         letter-spacing: 8px;
         text-align: left;
@@ -71,7 +80,7 @@
       }
       p {
         font-size: 16px;
-        font-weight: 24px;
+        line-height: 24px;
       }
     }
 
@@ -84,6 +93,135 @@
         background-color: #e23125;
         color: white;
         transition: all 0.4s ease-in-out;
+      }
+    }
+  }
+
+  .services {
+    &Cards {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      flex-wrap: wrap;
+      flex-direction: row;
+
+      width: 100%;
+      flex-basis: 55%;
+      max-width: 720px;
+
+      .servicecard {
+        width: 50%;
+      }
+    }
+  }
+
+  .getInspired {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+
+    max-width: 1400px;
+    &Content {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      color: #e23125;
+      gap: 35px;
+
+      h4 {
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 8px;
+        text-align: left;
+        text-transform: uppercase;
+      }
+      h3 {
+        font-size: 58px;
+        line-height: 60px;
+        font-family: "Lora", sans-serif;
+        letter-spacing: -2px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 50%;
+      }
+    }
+
+    &Cards {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  .testimonials {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e23125;
+
+    &Heading {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 10px;
+
+      h4 {
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 8px;
+        text-align: left;
+        text-transform: uppercase;
+      }
+      h3 {
+        font-size: 58px;
+        line-height: 60px;
+        font-family: "Lora", sans-serif;
+        letter-spacing: -2px;
+      }
+    }
+
+    &Content {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 50px;
+      position: relative;
+
+      &:hover {
+        &::after {
+          height: 50%;
+        }
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        width: 5px;
+        height: 5px;
+        background-color: #e23125;
+
+        position: absolute;
+        left: -20px;
+        top: 0;
+        transition: all 400ms ease-in-out;
+      }
+
+      &Author {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
       }
     }
   }

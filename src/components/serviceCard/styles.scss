@@ -1,0 +1,38 @@
+.servicecard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+  padding: 60px 40px;
+  color: #e23125;
+  max-width: 350px;
+  text-align: center;
+  border: 1px solid #e23125;
+
+  &:nth-of-type(odd) {
+    border-right: 0;
+  }
+
+  h4 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  button {
+    font-size: 18px;
+    line-height: 16px;
+    border: none;
+    background: transparent;
+    color: #e23125;
+
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
