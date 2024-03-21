@@ -318,7 +318,7 @@ const Jumbotron = () => {
         <p>© 2022 Younic. All Rights Reserved.</p>
 
         <div style={{ height: 200, width: 200 }}>
-          <audio src={audio}></audio>
+          <audio src={audio} controls />
         </div>
       </div>
     </div>
