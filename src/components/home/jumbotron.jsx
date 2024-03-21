@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import { motion } from "framer-motion";
-import audio from "../../assets/audio.mp3";
 
 // components
 import Button from "components/button/index";
@@ -316,10 +315,6 @@ const Jumbotron = () => {
           </div>
         </div>
         <p>© 2022 Younic. All Rights Reserved.</p>
-
-        <div style={{ height: 200, width: 200 }}>
-          <audio src={audio} controls />
-        </div>
       </div>
     </div>
   );
